@@ -1,0 +1,36 @@
+{
+  "name": "@wonkledge/scada-back",
+  "version": "0.0.1",
+  "description": "Node JS API SCADA",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "dev": "nodemon --exec 'babel-node src/index.js'",
+    "test": "jest src/",
+    "prepublishOnly": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonkledge/scada-back.git"
+  },
+  "keywords": [
+    "Framework",
+    "API"
+  ],
+  "author": "wonkledge",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.11"
+  }
+}
